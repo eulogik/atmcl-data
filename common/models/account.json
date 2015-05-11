@@ -1,0 +1,43 @@
+{
+  "name": "account",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "openingBalance": {
+      "type": "number"
+    },
+    "openingDate": {
+      "type": "date"
+    },
+    "ledgerBalance": {
+      "type": "number"
+    },
+    "currentBalance": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": ""
+    },
+    "entries": {
+      "type": "hasMany",
+      "model": "entry",
+      "foreignKey": ""
+    },
+    "group": {
+      "type": "belongsTo",
+      "model": "group",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

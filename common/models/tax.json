@@ -1,0 +1,21 @@
+{
+  "name": "tax",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "compound": {
+      "type": "boolean"
+    },
+    "percent": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

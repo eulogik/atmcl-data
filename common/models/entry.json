@@ -1,0 +1,21 @@
+{
+  "name": "entry",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "amount": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "transaction": {
+      "type": "belongsTo",
+      "model": "transaction",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

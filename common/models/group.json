@@ -1,0 +1,21 @@
+{
+  "name": "group",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "accounts": {
+      "type": "hasMany",
+      "model": "account",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

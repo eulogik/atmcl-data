@@ -1,0 +1,65 @@
+{
+  "name": "document",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "number": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "recipient": {
+      "type": "any"
+    },
+    "dueDate": {
+      "type": "date"
+    },
+    "date": {
+      "type": "date"
+    },
+    "note": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "number"
+    },
+    "paid": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    },
+    "items": {
+      "type": [
+        "item"
+      ]
+    },
+    "taxes": {
+      "type": [
+        "tax"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": ""
+    },
+    "transactions": {
+      "type": "hasMany",
+      "model": "transaction",
+      "foreignKey": ""
+    },
+    "contacts": {
+      "type": "hasOne",
+      "model": "contact",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

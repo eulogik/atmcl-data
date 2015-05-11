@@ -1,0 +1,24 @@
+{
+  "name": "transaction",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "attachment": {
+      "type": "any"
+    },
+    "reconciled": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
